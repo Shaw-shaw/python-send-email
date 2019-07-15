@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<h1>注册页</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <label for="id_username"></label>用户名：
+    <p><input type="text" id="id_username" name="username"></p>
+    <label for="id_pwd"></label>密码：
+    <p><input type="password" id="id_pwd" name="pwd"></p>
+        <label for="id_email"></label>邮箱：
+    <p><input type="email" id="id_email" name="email"></p>
+    <input type="submit">
+</form>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
